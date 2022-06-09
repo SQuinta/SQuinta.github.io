@@ -9,8 +9,8 @@ lib.ssMetadata = [];
 
 
 
-(lib._img = function() {
-	this.initialize(img._img);
+(lib.img = function() {
+	this.initialize(img.img);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,300,250);// helper functions:
 
@@ -145,17 +145,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 }).prototype = getMCSymbolPrototype(lib.logo, new cjs.Rectangle(-293.1,-48.3,586.2,96.69999999999999), null);
 
 
-(lib._img_1 = function(mode,startPosition,loop) {
+(lib.img_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Livello_1
-	this.instance = new lib._img();
+	this.instance = new lib.img();
 	this.instance.parent = this;
 	this.instance.setTransform(-150,-125);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib._img_1, new cjs.Rectangle(-150,-125,300,250), null);
+}).prototype = getMCSymbolPrototype(lib.img_1, new cjs.Rectangle(-150,-125,300,250), null);
 
 
 (lib.cta = function(mode,startPosition,loop) {
@@ -292,7 +292,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(23).call(this.frame_24).wait(1));
 
 	// img
-	this.instance = new lib._img_1();
+	this.instance = new lib.img_1();
 	this.instance.parent = this;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0},0).to({alpha:1},23,cjs.Ease.quintOut).wait(1));
@@ -433,7 +433,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"_img.jpg", id:"_img"}
+		{src:"img.jpg", id:"img"}
 	],
 	preloads: []
 };
