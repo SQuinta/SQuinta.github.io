@@ -1257,7 +1257,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_1 = function() {
 		this.visible=true;
 	}
-	this.frame_7 = function() {
+	this.frame_17 = function() {
 		this.parent.logo.gotoAndPlay("apri");
 	}
 	this.frame_24 = function() {
@@ -1277,7 +1277,7 @@ if (reversed == null) { reversed = false; }
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(6).call(this.frame_7).wait(17).call(this.frame_24).wait(9).call(this.frame_33).wait(6).call(this.frame_39).wait(11).call(this.frame_50).wait(22).call(this.frame_72).wait(28));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(16).call(this.frame_17).wait(7).call(this.frame_24).wait(9).call(this.frame_33).wait(6).call(this.frame_39).wait(11).call(this.frame_50).wait(22).call(this.frame_72).wait(28));
 
 	// Livello_3 (mask)
 	var mask = new cjs.Shape();
@@ -1496,7 +1496,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {"apri":1,"chiudi":20};
+	props.labels = {"apri":1,"chiudi":15};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -1509,21 +1509,21 @@ if (reversed == null) { reversed = false; }
 	this.frame_1 = function() {
 		this.visible=true;
 	}
-	this.frame_16 = function() {
+	this.frame_11 = function() {
 		this.parent.fondazione.gotoAndPlay("apri");
 	}
-	this.frame_19 = function() {
+	this.frame_14 = function() {
 		this.stop();
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(15).call(this.frame_16).wait(3).call(this.frame_19).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(10).call(this.frame_11).wait(3).call(this.frame_14).wait(16));
 
 	// logo
 	this.instance = new lib.logo();
 	this.instance.setTransform(0.05,0.05,0.557,0.5563,0,0,0,0.1,0.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:0,regY:0,scaleX:0.901,scaleY:0.9,x:16.4,y:0,alpha:0},0).to({regX:0.1,regY:0.1,scaleX:0.557,scaleY:0.5563,x:0.05,y:0.05,alpha:1},18,cjs.Ease.quadOut).to({regX:0,regY:0,scaleX:0.2603,scaleY:0.26,alpha:0},20,cjs.Ease.quadOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:0,regY:0,scaleX:0.901,scaleY:0.9,x:16.4,y:0,alpha:0},0).to({regX:0.1,regY:0.1,scaleX:0.557,scaleY:0.5563,x:0.05,y:0.05,alpha:1},13,cjs.Ease.quadOut).to({regX:0,regY:0,scaleX:0.2603,scaleY:0.26,alpha:0},15,cjs.Ease.quadOut).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1569,7 +1569,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-38.9,-34.1,93,64.9);
+p.nominalBounds = new cjs.Rectangle(-38.9,-34.1,92.9,64.8);
 
 
 (lib.cta1anim = function(mode,startPosition,loop,reversed) {
