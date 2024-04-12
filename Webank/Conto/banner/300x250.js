@@ -25,20 +25,20 @@ lib.ssMetadata = [];
 
 
 
-(lib._01 = function() {
-	this.initialize(img._01);
+(lib.img01 = function() {
+	this.initialize(img.img01);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,300,250);
 
 
-(lib._02 = function() {
-	this.initialize(img._02);
+(lib.img02 = function() {
+	this.initialize(img.img02);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,300,250);
 
 
-(lib._03 = function() {
-	this.initialize(img._03);
+(lib.img03 = function() {
+	this.initialize(img.img03);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,300,250);// helper functions:
 
@@ -768,7 +768,7 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.baserossa, new cjs.Rectangle(-49.4,-56.1,98.8,112.30000000000001), null);
 
 
-(lib._03_1 = function(mode,startPosition,loop,reversed) {
+(lib._03 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -780,17 +780,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Livello_1
-	this.instance = new lib._03();
+	this.instance = new lib.img03();
 	this.instance.setTransform(-150,-125);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib._03_1, new cjs.Rectangle(-150,-125,300,250), null);
+}).prototype = getMCSymbolPrototype(lib._03, new cjs.Rectangle(-150,-125,300,250), null);
 
 
-(lib._02_1 = function(mode,startPosition,loop,reversed) {
+(lib._02 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -802,17 +802,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Livello_1
-	this.instance = new lib._02();
+	this.instance = new lib.img02();
 	this.instance.setTransform(-150,-125);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib._02_1, new cjs.Rectangle(-150,-125,300,250), null);
+}).prototype = getMCSymbolPrototype(lib._02, new cjs.Rectangle(-150,-125,300,250), null);
 
 
-(lib._01_1 = function(mode,startPosition,loop,reversed) {
+(lib._01 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -824,14 +824,14 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Livello_1
-	this.instance = new lib._01();
+	this.instance = new lib.img01();
 	this.instance.setTransform(-150,-125);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib._01_1, new cjs.Rectangle(-150,-125,300,250), null);
+}).prototype = getMCSymbolPrototype(lib._01, new cjs.Rectangle(-150,-125,300,250), null);
 
 
 (lib._0 = function(mode,startPosition,loop,reversed) {
@@ -1519,7 +1519,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.tx2).wait(60));
 
 	// _00x250_02_jpg
-	this.instance = new lib._02_1();
+	this.instance = new lib._02();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0},0).to({alpha:1},28,cjs.Ease.quadOut).to({alpha:0},30,cjs.Ease.quadIn).wait(1));
 
@@ -1569,7 +1569,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.tx1).wait(60));
 
 	// _1
-	this.instance = new lib._01_1();
+	this.instance = new lib._01();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0},0).to({alpha:1},28,cjs.Ease.quadOut).to({alpha:0},30,cjs.Ease.quadIn).wait(1));
 
@@ -1744,7 +1744,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.tx3).wait(60));
 
 	// _00x250_03_jpg
-	this.instance = new lib._03_1();
+	this.instance = new lib._03();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0},0).to({alpha:1},28,cjs.Ease.quadOut).to({alpha:0},30,cjs.Ease.quadIn).wait(1));
 
@@ -2331,9 +2331,9 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"_01.jpg", id:"_01"},
-		{src:"_02.jpg", id:"_02"},
-		{src:"_03.jpg", id:"_03"}
+		{src:"img01.jpg", id:"img01"},
+		{src:"img02.jpg", id:"img02"},
+		{src:"img03.jpg", id:"img03"}
 	],
 	preloads: []
 };
